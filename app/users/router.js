@@ -1,16 +1,14 @@
-var router = require('express').Router()
-var needUser = require('./need-user')
+const router = require('express').Router();
 
-function signIn (req, res) {
+function signIn(req, res) {
   /* eslint no-unused-vars:0 */
   // ...
 }
 
-function profile (req, res) {
-  res.render('users/profile')
+function profile(req, res) {
+  res.render('users/profile');
 }
 
-router.post('/users/sign-in', signIn)
-router.get('/users/profile', needUser, profile)
+router.post('/users/sign-in', signIn);
 
-module.exports = router
+module.exports = router;

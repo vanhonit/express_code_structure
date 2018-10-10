@@ -14,4 +14,5 @@ const db = new Sequelize(env.DB_NAME, env.DB_USER, env.DB_PASS, {
   // http://docs.sequelizejs.com/manual/tutorial/querying.html#operators
   operatorsAliases: false
 });
+
 module.export = db;
