@@ -16,6 +16,6 @@ if (PRODUCTION) {
   extendEnvPath = path.resolve(rootDir, '.env.local');
 }
 if (extendEnvPath) {
-  dotenvExpand(dotenv.config());
   dotenvExpand(dotenv.config({ path: extendEnvPath }));
+  dotenvExpand(dotenv.config());
 }
