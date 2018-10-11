@@ -1,5 +1,6 @@
-import { Sequelize } from 'sequelize';
-import db from 'app/db';
+import db from '../db';
+
+const Sequelize = require('sequelize');
 
 const User = db.define('user', {
   first_name: Sequelize.STRING(50),
@@ -8,3 +9,4 @@ const User = db.define('user', {
   email: Sequelize.STRING(255),
   phone: Sequelize.STRING(20)
 });
+module.exports = User;

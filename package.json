@@ -10,7 +10,7 @@
   },
   "main": "./server",
   "engines": {
-    "node": "^9"
+    "node": ">=9"
   },
   "keywords": [
     "express.js",
